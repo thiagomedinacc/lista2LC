@@ -8,6 +8,7 @@ import ClothingAdMosaico from './components/ClothingAdMosaico';
 import camisetaAdidas from './assets/camisetaAdidas.jpg';
 import calcaNike from './assets/calcaNike.jpg';
 import terno from './assets/terno.jpg'
+import Header from './components/Header';
 
 export default function App() {
   const [roupas, setRoupas] = useState(
@@ -50,6 +51,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+        <Header style = {{backgroundCoslor: 'red'}}/>
+
       <View style={styles.header}>
         <Text> Alterar Exibição</Text>
         <Toogle onChange={toogleSwitch} />
